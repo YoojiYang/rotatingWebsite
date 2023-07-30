@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #eeb958, #01630e);
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  align-items: center;
+  font-weight: 550;
+  position: sticky;
+  z-index: 5;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area > img {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-links ul a:hover {
+  color: #eeb958;
+}
+
+/* 
+information
+*/
+.information {
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+.overlay {
+  height: 0;
+  width: 0;
+  border-top: 480px solid #fff;
+  border-right: 480px solid transparent;
+  border-bottom: 480px solid #fff;
+  border-left: 480px solid #fff;
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background: #ccc; */
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.pc {
+  width: 400px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.feature {
+  position: absolute;
+  color: #fff;
+  display: flex;
+}
+
+.feature > img {
+  height: 65px;
+  width: auto;
+  margin: auto 0;
+}
+
+.feature-content{
+  margin-left: 20px;
+}
+
+.feature-content > a {
+  margin-top: 8px;
+}
+
+.one {
+  top: 50%;
+  right: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.two {
+  top: 13%;
+  left: 35%;
+  transform: translateX(-25%) translateY(-50%);
+  transform: rotate(-90deg);
+}
+
+.three {
+  top: 46%;
+  left: 2%;
+  transform: translateX(-25%) translateY(-50%);
+  transform: rotate(-180deg);
+}
+
+.four {
+  bottom: 17%;
+  right: 39%;
+  transform: translateX(-25%) translateY(-50%);
+  transform: rotate(-270deg);
+}
+
+/* 
+control
+*/
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+  text-align: center;
+}
+
+.control > img {
+  width: 15%;
+  cursor: pointer;
+}
+
+.control > h3 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+#downBtn{
+  transform: rotate(-180deg);
+}
